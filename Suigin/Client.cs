@@ -6,8 +6,10 @@ namespace Suigin
     {
         public Client(string connectionString)
         {
-            GC.KeepAlive(connectionString);
-            throw new ArgumentNullException();
+            if (connectionString != string.Empty)
+            {
+                throw new ArgumentNullException();
+            }
         }
     }
 }
