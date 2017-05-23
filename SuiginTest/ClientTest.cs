@@ -1,4 +1,5 @@
-﻿using Suigin;
+﻿using System;
+using Suigin;
 using Xunit;
 
 namespace SuiginTest
@@ -10,6 +11,12 @@ namespace SuiginTest
         {
             var client = new Client(connectionString: string.Empty);
             Assert.NotNull(client);
+        }
+
+        [Fact]
+        public void ConstructorThrowsOnNullString()
+        {
+            Assert.Throws<ArgumentNullException>(() => new Client(connectionString: null));
         }
     }
 }
