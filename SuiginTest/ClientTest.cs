@@ -6,9 +6,9 @@ namespace SuiginTest
     public class ClientTest
     {
         [Fact]
-        public void HasConstructor()
+        public void HasConstructorTakingString()
         {
-            var client = new Client();
+            var client = new Client(connectionString: string.Empty);
             Assert.NotNull(client);
         }
     }
