@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suigin", "Suigin\Suigin.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuiginTest", "SuiginTest\SuiginTest.csproj", "{325FF5CB-2C2A-4DFC-9C52-5771D9BF1FD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metaphor", "Metaphor\Metaphor.csproj", "{AE625C7E-87CA-4BEE-8DF3-3081192B8203}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{325FF5CB-2C2A-4DFC-9C52-5771D9BF1FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{325FF5CB-2C2A-4DFC-9C52-5771D9BF1FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{325FF5CB-2C2A-4DFC-9C52-5771D9BF1FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE625C7E-87CA-4BEE-8DF3-3081192B8203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE625C7E-87CA-4BEE-8DF3-3081192B8203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE625C7E-87CA-4BEE-8DF3-3081192B8203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE625C7E-87CA-4BEE-8DF3-3081192B8203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
