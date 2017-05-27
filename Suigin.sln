@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuiginTest", "SuiginTest\Su
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metaphor", "Metaphor\Metaphor.csproj", "{AE625C7E-87CA-4BEE-8DF3-3081192B8203}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaphorTest", "MetaphorTest\MetaphorTest.csproj", "{761E83D8-24A5-4325-A10B-8E0A4386F87E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AE625C7E-87CA-4BEE-8DF3-3081192B8203}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE625C7E-87CA-4BEE-8DF3-3081192B8203}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE625C7E-87CA-4BEE-8DF3-3081192B8203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761E83D8-24A5-4325-A10B-8E0A4386F87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761E83D8-24A5-4325-A10B-8E0A4386F87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761E83D8-24A5-4325-A10B-8E0A4386F87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761E83D8-24A5-4325-A10B-8E0A4386F87E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
