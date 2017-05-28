@@ -15,8 +15,8 @@ namespace MetaphorTest
         [Fact]
         public void ConstructorThrowsOnNullString()
         {
-            var random = new Random();
-            Assert.Throws<ArgumentNullException>(() => new RandomString(validCharacters: null, randomCallback: random.NextBytes));
+            void RandomCallback(byte[] buffer) { }
+            Assert.Throws<ArgumentNullException>(() => new RandomString(validCharacters: null, randomCallback: RandomCallback));
         }
     }
 }
