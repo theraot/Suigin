@@ -7,11 +7,17 @@ namespace MetaphorTest
     public class RandomStringTest
     {
         [Fact]
-        public void HasConstructorTakingStringAndRandomCallback()
+        public void ConstructorThrowsOnNullCallback()
         {
             var random = new Random();
-            var randomString = new RandomString(validCharacters: string.Empty, randomCallback: random.NextBytes);
-            Assert.NotNull(randomString);
+            Assert.Throws<ArgumentNullException>(() => new RandomString(validCharacters: string.Empty, randomCallback: null));
+        }
+
+        [Fact]
+        public void ConstructorThrowsOnNullString()
+        {
+            var random = new Random();
+            Assert.Throws<ArgumentNullException>(() => new RandomString(validCharacters: null, randomCallback: random.NextBytes));
         }
     }
 }
