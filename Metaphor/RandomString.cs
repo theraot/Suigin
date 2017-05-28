@@ -6,7 +6,10 @@ namespace Metaphor
     {
         public RandomString(string validCharacters, Action<byte[]> randomCallback)
         {
-            GC.KeepAlive(validCharacters);
+            if (validCharacters != string.Empty)
+            {
+                throw new ArgumentNullException(nameof(validCharacters));
+            }
             GC.KeepAlive(randomCallback);
         }
     }
