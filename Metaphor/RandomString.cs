@@ -10,7 +10,10 @@ namespace Metaphor
             {
                 throw new ArgumentNullException(nameof(validCharacters));
             }
-            GC.KeepAlive(randomCallback);
+            if (randomCallback == null)
+            {
+                throw new ArgumentNullException(nameof(randomCallback));
+            }
         }
     }
 }
