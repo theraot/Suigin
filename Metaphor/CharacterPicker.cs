@@ -2,9 +2,9 @@
 
 namespace Metaphor
 {
-    public class RandomString
+    public class CharacterPicker
     {
-        public RandomString(Action<byte[]> randomCallback, char[] validCharacters)
+        public CharacterPicker(Action<byte[]> randomCallback, char[] validCharacters)
         {
             if (validCharacters == null)
             {
