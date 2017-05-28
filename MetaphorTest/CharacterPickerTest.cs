@@ -4,7 +4,7 @@ using Xunit;
 
 namespace MetaphorTest
 {
-    public class RandomStringTest
+    public class CharacterPickerTest
     {
         [Fact]
         public void ConstructorThrowsOnNullCallback()
