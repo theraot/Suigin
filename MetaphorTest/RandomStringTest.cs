@@ -1,4 +1,5 @@
-﻿using Metaphor;
+﻿using System;
+using Metaphor;
 using Xunit;
 
 namespace MetaphorTest
@@ -6,9 +7,10 @@ namespace MetaphorTest
     public class RandomStringTest
     {
         [Fact]
-        public void HasConstructorTakingString()
+        public void HasConstructorTakingStringAndRandomCallback()
         {
-            var randomString = new RandomString(validCharacters: string.Empty);
+            var random = new Random();
+            var randomString = new RandomString(validCharacters: string.Empty, randomCallback: random.NextBytes);
             Assert.NotNull(randomString);
         }
     }
