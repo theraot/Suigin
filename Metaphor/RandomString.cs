@@ -4,9 +4,9 @@ namespace Metaphor
 {
     public class RandomString
     {
-        public RandomString(Action<byte[]> randomCallback, string validCharacters)
+        public RandomString(Action<byte[]> randomCallback, char[] validCharacters)
         {
-            if (validCharacters != string.Empty)
+            if (validCharacters == null)
             {
                 throw new ArgumentNullException(nameof(validCharacters));
             }

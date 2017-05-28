@@ -9,11 +9,11 @@ namespace MetaphorTest
         [Fact]
         public void ConstructorThrowsOnNullCallback()
         {
-            Assert.Throws<ArgumentNullException>(() => new RandomString(randomCallback: null, validCharacters: string.Empty));
+            Assert.Throws<ArgumentNullException>(() => new RandomString(randomCallback: null, validCharacters: new char[] { }));
         }
 
         [Fact]
-        public void ConstructorThrowsOnNullString()
+        public void ConstructorThrowsOnNullCharArray()
         {
             void RandomCallback(byte[] buffer) { }
             Assert.Throws<ArgumentNullException>(() => new RandomString(randomCallback: RandomCallback, validCharacters: null));
