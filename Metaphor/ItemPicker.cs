@@ -2,13 +2,13 @@
 
 namespace Metaphor
 {
-    public class CharacterPicker
+    public class ItemPicker<T>
     {
-        public CharacterPicker(Action<byte[]> randomCallback, char[] validCharacters)
+        public ItemPicker(Action<byte[]> randomCallback, T[] validItems)
         {
-            if (validCharacters == null)
+            if (validItems == null)
             {
-                throw new ArgumentNullException(nameof(validCharacters));
+                throw new ArgumentNullException(nameof(validItems));
             }
             if (randomCallback == null)
             {
